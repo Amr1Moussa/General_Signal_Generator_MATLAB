@@ -39,11 +39,11 @@ This project implements a **General Signal Generator** capable of:
 
 After generating the signal, users can apply:
 
-- 🔹 Amplitude Scaling  
-- 🔹 Time Reversal  
-- 🔹 Time Shift  
-- 🔹 Time Expansion  
-- 🔹 Time Compression  
+-  Amplitude Scaling  
+-  Time Reversal  
+-  Time Shift  
+-  Time Expansion  
+-  Time Compression  
 
 ---
 
