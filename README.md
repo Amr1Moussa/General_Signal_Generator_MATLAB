@@ -128,30 +128,30 @@ signal_generator
 ---
 ## 📷 Screenshots
 
-### ▶️ Full Run Example
+#### ▶️ Full Run Example
 ![Run Example](Example_run/run_example.png)
 
 ---
 
-### 🎚️ Amplitude Scaling
+#### 🎚️ Amplitude Scaling
 ![Amplitude Scaling](Example_run/amp_scale.png)
 
 ---
 
-### ↔️ Time Shift
+#### ↔️ Time Shift
 ![Time Shift](Example_run/time_shift.png)
 
 ---
 
-### 🔁 Time Reversal
+#### 🔁 Time Reversal
 ![Time Reversal](Example_run/time_reversal.png)
 
 ---
 
-### 🔍 Expansion
+#### 🔍 Expansion
 ![Expansion](Example_run/expand.png)
 
 ---
 
-### 🔻 Compression
+#### 🔻 Compression
 ![Compression](Example_run/compress.png)
