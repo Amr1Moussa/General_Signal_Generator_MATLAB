@@ -119,15 +119,6 @@ signal_generator
 
 ---
 
-## 👨‍💻 Team Members
-
-| Name                       | ID       |
-| -------------------------- | -------- |
-| Amr Mahmoud Moussa         | 23010637 |
-| Yasen Mohamed Ahmed Salhin | 23010962 |
-
----
-
 ## 📄 Notes
 
 * The project uses **iterative region definition**, making it flexible for complex signals.
@@ -135,50 +126,3 @@ signal_generator
 * The GUI is styled for better usability and visualization.
 
 ---
-
-## 📷 Screenshots
-
-> *(Add screenshots of your GUI and output here)*
-
----
-
-## 📬 Submission
-
-This project is part of the **Signals & Systems Mini Project**.
-
----
-
-## ⭐ Future Improvements
-
-* Export signal to file
-* Frequency domain visualization (FFT)
-* Real-time signal editing
-* Migration to App Designer
-
----
-
-```
-
----
-
-## 🔥 Tips before uploading
-
-- Add:
-  - screenshots (VERY important for grading)
-- Keep file name:
-```
-
-signal_generator.fig
-signal_generator.m
-README.md
-
-```
-
----
-
-If you want, I can also:
-- write the **full report PDF**
-- or generate **GitHub screenshots section automatically styled**
-
-Just tell me 👍
-```
