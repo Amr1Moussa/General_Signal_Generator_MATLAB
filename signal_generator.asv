@@ -1,0 +1,382 @@
+function varargout = signal_generator(varargin)
+% SIGNAL_GENERATOR MATLAB code for signal_generator.fig
+%      SIGNAL_GENERATOR, by itself, creates a new SIGNAL_GENERATOR or raises the existing
+%      singleton*.
+%
+%      H = SIGNAL_GENERATOR returns the handle to a new SIGNAL_GENERATOR or the handle to
+%      the existing singleton*.
+%
+%      SIGNAL_GENERATOR('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in SIGNAL_GENERATOR.M with the given input arguments.
+%
+%      SIGNAL_GENERATOR('Property','Value',...) creates a new SIGNAL_GENERATOR or raises the
+%      existing singleton*.  Starting from the left, property value pairs are
+%      applied to the GUI before signal_generator_OpeningFcn gets called.  An
+%      unrecognized property name or invalid value makes property application
+%      stop.  All inputs are passed to signal_generator_OpeningFcn via varargin.
+%
+%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
+%      instance to run (singleton)".
+%
+% See also: GUIDE, GUIDATA, GUIHANDLES
+
+% Edit the above text to modify the response to help signal_generator
+
+% Last Modified by GUIDE v2.5 24-Mar-2026 01:08:56
+
+% Begin initialization code - DO NOT EDIT
+gui_Singleton = 1;
+gui_State = struct('gui_Name',       mfilename, ...
+                   'gui_Singleton',  gui_Singleton, ...
+                   'gui_OpeningFcn', @signal_generator_OpeningFcn, ...
+                   'gui_OutputFcn',  @signal_generator_OutputFcn, ...
+                   'gui_LayoutFcn',  [] , ...
+                   'gui_Callback',   []);
+if nargin && ischar(varargin{1})
+    gui_State.gui_Callback = str2func(varargin{1});
+end
+
+if nargout
+    [varargout{1:nargout}] = gui_mainfcn(gui_State, varargin{:});
+else
+    gui_mainfcn(gui_State, varargin{:});
+end
+% End initialization code - DO NOT EDIT
+
+
+% --- Executes just before signal_generator is made visible.
+function signal_generator_OpeningFcn(hObject, eventdata, handles, varargin)
+
+% Choose default command line output for signal_generator
+handles.output = hObject;
+
+% Update handles structure
+guidata(hObject, handles);
+
+% UIWAIT makes signal_generator wait for user response (see UIRESUME)
+% uiwait(handles.figure1);
+
+
+% --- Outputs from this function are returned to the command line.
+function varargout = signal_generator_OutputFcn(hObject, eventdata, handles) 
+% varargout  cell array for returning output args (see VARARGOUT);
+% hObject    handle to figure
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Get default command line output from handles structure
+varargout{1} = handles.output;
+
+
+
+function edit_fs_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_fs (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_fs as text
+%        str2double(get(hObject,'String')) returns contents of edit_fs as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_fs_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_fs (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+function edit_t_start_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_t_start (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_t_start as text
+%        str2double(get(hObject,'String')) returns contents of edit_t_start as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_t_start_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_t_start (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+function edit6_Callback(hObject, eventdata, handles)
+% hObject    handle to edit6 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit6 as text
+%        str2double(get(hObject,'String')) returns contents of edit6 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit6_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit6 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+function edit_end_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_end (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_end as text
+%        str2double(get(hObject,'String')) returns contents of edit_end as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_end_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_end (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit_BPs_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_BPs (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit_BPs as text
+%        str2double(get(hObject,'String')) returns contents of edit_BPs as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit_BPs_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_BPs (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on selection change in menu.
+function menu_Callback(hObject, eventdata, handles)
+
+% --- Executes during object creation, after setting all properties.
+function menu_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to menu (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: popupmenu controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% Amplitude Scale.
+function Amplitude_Scale_Callback(hObject, eventdata, handles)
+
+k = str2double(get(handles.edit_op_value,'String'));
+
+handles.y = k * handles.y;
+
+axes(handles.axes1);
+plot(handles.t, handles.y,'LineWidth',2);
+grid on;
+
+guidata(hObject, handles);
+
+% Time Reversal
+function Time_Reversal_Callback(hObject, eventdata, handles)
+
+handles.t = -handles.t;
+
+% Compress
+function Compress_Callback(hObject, eventdata, handles)
+a = str2double(get(handles.edit_value,'String'));
+
+% Compress
+handles.t = handles.t * a;
+% Expand
+function Expand_Callback(hObject, eventdata, handles)
+
+a = str2double(get(handles.edit_op_value,'String'));
+handles.t = handles.t / a;
+
+% Time_Shift.
+function Time_Shift_Callback(hObject, eventdata, handles)
+
+shift = str2double(get(handles.edit_op_value,'String'));
+handles.t = handles.t - shift;
+
+function Grid_Button_Callback(hObject, eventdata, handles)
+grid on
+
+function Clear_Button_Callback(hObject, eventdata, handles)
+clear 
+clc
+cla
+grid off
+
+function Close_Button_Callback(hObject, eventdata, handles)
+close
+
+function Display_Button_Callback(hObject, eventdata, handles)
+
+% ===== Read Time Info =====
+fs = str2double(get(handles.edit_fs,'String'));
+t_start = str2double(get(handles.edit_tstart,'String'));
+t_end = str2double(get(handles.edit_tend,'String'));
+
+t = t_start : 1/fs : t_end;
+
+% ===== Breakpoints =====
+bp = str2num(get(handles.edit_bp,'String')); %#ok<ST2NM>
+regions = [t_start, bp, t_end];
+
+y = zeros(size(t));
+
+% ===== Signal Type =====
+val = get(handles.popupmenu1,'Value');
+
+for i = 1:length(regions)-1
+    
+    t1 = regions(i);
+    t2 = regions(i+1);
+    idx = (t >= t1) & (t < t2);
+    
+    switch val
+        
+        case 1 % DC
+            A = str2double(get(handles.edit_amp,'String'));
+            y(idx) = A;
+            
+        case 2 % Ramp
+            m = str2double(get(handles.edit_slope,'String'));
+            c = str2double(get(handles.edit_interc,'String'));
+            y(idx) = m*t(idx) + c;
+            
+        case 3 % Polynomial
+            A = str2double(get(handles.edit_amp,'String'));
+            p = str2double(get(handles.edit_power,'String'));
+            c = str2double(get(handles.edit_interc,'String'));
+            y(idx) = A*(t(idx).^p) + c;
+            
+        case 4 % Exponential
+            A = str2double(get(handles.edit_amp,'String'));
+            a = str2double(get(handles.edit_exp,'String'));
+            y(idx) = A * exp(a*t(idx));
+            
+        case 5 % Sinusoidal
+            A = str2double(get(handles.edit_amp,'String'));
+            f = str2double(get(handles.edit_freq,'String'));
+            phi = str2double(get(handles.edit_phase,'String'));
+            y(idx) = A * sin(2*pi*f*t(idx) + phi);
+    end
+end
+
+% ===== Store =====
+handles.t = t;
+handles.y = y;
+guidata(hObject, handles);
+
+% ===== Plot =====
+axes(handles.axes1);
+plot(t, y, 'LineWidth', 2);
+grid on;
+title('Original Signal');
+
+
+function edit_amp_Callback(hObject, eventdata, handles)
+
+
+function edit_amp_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+function edit_slope_Callback(hObject, eventdata, handles)
+
+
+function edit_slope_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit_interc_Callback(hObject, eventdata, handles)
+
+function edit_interc_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function edit_power_Callback(hObject, eventdata, handles)
+
+function edit_power_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function edit_exp_Callback(hObject, eventdata, handles)
+
+function edit_exp_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function edit_freq_Callback(hObject, eventdata, handles)
+
+function edit_freq_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function edit_phase_Callback(hObject, eventdata, handles)
+
+function edit_phase_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+function edit_op_value_Callback(hObject, eventdata, handles)
+
+function edit_op_value_CreateFcn(hObject, eventdata, handles)
+
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
