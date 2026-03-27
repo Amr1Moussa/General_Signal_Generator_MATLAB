@@ -1,8 +1,4 @@
-Here’s a clean, professional **README.md** you can directly use for your GitHub repo 👇
 
----
-
-````markdown
 # 📡 General Signal Generator (MATLAB GUI)
 
 A MATLAB-based GUI application developed using GUIDE that allows users to generate and manipulate different types of signals in the time domain.
